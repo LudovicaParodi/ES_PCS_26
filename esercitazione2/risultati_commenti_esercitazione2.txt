@@ -1,0 +1,30 @@
+esercizio1
+variabile x: 0
+
+Questi sono gli indirizzi dell'array double[ad]. In generale l'elemento i-esimo si trova all'indirizzo base+i*sizeof(T), che in questo caso è 8 byte.
+i=0 	0x7ffcde52e480
+i=1 	0x7ffcde52e488
+i=2 	0x7ffcde52e490
+i=3 	0x7ffcde52e498
+
+Questi sono gli indirizzi dell'array float[af]. In generale l'elemento i-esimo si trova all'indirizzo base+i*sizeof(T), che in questo caso è 4 byte.
+i=0 	0x7ffcde52e460
+i=1 	0x7ffcde52e464
+i=2 	0x7ffcde52e468
+i=3 	0x7ffcde52e46c
+i=4 	0x7ffcde52e470
+i=5 	0x7ffcde52e474
+i=6 	0x7ffcde52e478
+i=7 	0x7ffcde52e47c
+
+Questi sono gli indirizzi dell'array int[ai]. In generale l'elemento i-esimo si trova all'indirizzo base+i*sizeof(T), che in questo caso è 4 byte.
+i=0 	0x7ffcde52e454
+i=1 	0x7ffcde52e458
+i=2 	0x7ffcde52e45c
+
+Questi sono gli indirizzi delle variabili x e y.
+i=0 	0x7ffcde52e450
+i=1 	0x7ffcde52e44c
+
+Visto che siamo in base esadecimale abbiamo 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+notiamo come la y viene 4 bytes prima della x (in base all'indirizzo). Nella linea di codice 12, si sta imponendo che nell'indirizzo di memoria partendo da y e aggiungendo 1 (parentesi quadre) volta 4 byte (size(float)) ci sia il valore 0. In quella posizione però è presente x, quindi stiamo modificando il valore di x.
