@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/esercitazione3.dir/link.d CMakeFiles/esercitazione3.dir/main3.cpp.o -o esercitazione3
