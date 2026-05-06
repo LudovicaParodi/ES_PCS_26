@@ -1,0 +1,4 @@
+Dai test sperimentali effettuati si osserva che, per vettori di dimensione molto piccola (size ≤ 15), gli algoritmi quadratici risultano più efficienti rispetto agli algoritmi 
+O(n log n), anche se non è presente una differenza netta. All’aumentare della dimensione dell’input, Quicksort diventa rapidamente più efficiente, in accordo con la sua 
+complessità asintotica. Si osserva inoltre che std::sort() ha prestazioni molto buone su tutte le dimensioni considerate. Tuttavia, nei casi analizzati, 
+Quicksort implementato risulta leggermente più veloce rispetto a std::sort(), soprattutto per vettori di dimensioni piccole e medie.
